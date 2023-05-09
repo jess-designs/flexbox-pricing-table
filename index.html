@@ -18,7 +18,6 @@
       align-items: center;
       gap: 2rem;
       height: 100vh; /* Need to set parent container width to 100% if you want it to center vertically using align-items */
-
     }
 
     .pricing-plan {
@@ -48,6 +47,10 @@
       color: #F77E21;
     }
 
+    .plan-features {
+      padding: 0;
+    }
+
     .pricing-plan ul {
       margin-top: 0;
     }
@@ -65,14 +68,26 @@
        .pricing-container {
       flex-direction: column;
        }
-    
+    body {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+
+     .first {
+      padding-left: 50px !important;
+      padding-right: 50px !important;
+        }
+      .pricing-plan {
+        padding-left: 40px;
+        padding-right: 40px;
+      }
     }
   </style>
 </head>
 
 <body>
   <div class="pricing-container">
-    <div class="pricing-plan">
+    <div class="pricing-plan first">
       <div class="plan-title">Basic</div>
       <div class="plan-price">$9.99/month</div>
       <ul class="plan-features">
